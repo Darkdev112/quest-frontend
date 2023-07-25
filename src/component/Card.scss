@@ -1,0 +1,121 @@
+
+.card{
+    margin: .8rem 0;
+    height: 16rem;
+    width: 22rem;
+    background-color: rgba(255, 255, 255, 1);
+    border: 8px ;
+    margin-left: 3rem;
+    border-radius:.7rem;
+    box-shadow: 4px 4px 24px 0px rgba(0, 0, 0, 0.08);
+  }
+  .card-img img{
+    height:10rem;
+    width: 22rem;
+  }
+  .card-title h2{
+    font-size: 1.1rem;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 0rem;
+  }
+
+  .btn-box {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    z-index: 1;
+    gap: 1rem;
+    margin-left: 2rem;
+  }
+  button {
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    position: relative;
+    background: transparent;
+    color: #ffa500;
+    text-transform: uppercase;
+    border: 3px solid #ffa500;
+    cursor: pointer;
+    transition: all 0.7s;
+    overflow: hidden;
+    border-radius: 100px;
+  }
+.btn-1{
+    padding: 10px 50px;
+}
+  button:hover {
+    color: #000;
+  }
+  span {
+    transition: all 0.7s;
+    z-index: -1;
+  }
+
+  button .first {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 0;
+    width: 25%;
+    height: 100%;
+    background: #ffa500;
+  }
+
+  button:hover .first {
+    top: 0;
+    right: 0;
+  }
+  button .second {
+    content: "";
+    position: absolute;
+    left: 25%;
+    top: -100%;
+    height: 100%;
+    width: 25%;
+    background: #ffa500;
+  }
+
+  button:hover .second {
+    top: 0;
+    left: 50%;
+  }
+
+  button .third {
+    content: "";
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    top: 100%;
+    width: 25%;
+    background: #ffa500;
+  }
+
+  button:hover .third {
+    top: 0;
+    left: 25%;
+  }
+
+  button .fourth {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 0;
+    height: 100%;
+    width: 25%;
+    background: #ffa500;
+  }
+
+  button:hover .fourth {
+    top: 0;
+    left: 0;
+  }
+@media screen and (max-width:1220px) {
+    .card{
+        margin-left: 2rem;
+    }
+}
