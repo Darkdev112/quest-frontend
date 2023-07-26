@@ -1,0 +1,67 @@
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .left {
+    left: 0;
+    background-color: rgb(194, 222, 231);
+    width:25%; 
+  }
+  .left-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .right {
+    right: 0;
+    background-color: rgb(247, 244, 244);
+    width:75%
+  }
+  .centered {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .centered img {
+    width: 120px;
+    border-radius: 50%;
+  }
+  .centered h2{
+    width: 20rem;
+    font-size: 1rem;
+    padding: 1rem 0;
+  }
+  .centered p{
+    width: 10rem;
+    font-size: .8rem;
+   margin-left: 5rem;
+  }
+  .image-checkup img{
+    position: relative;
+    width: 360px;
+    height: 300px;
+    margin-top: 15rem;
+    margin-left: -1.5rem;
+  }
+  .header-right{
+    padding: 2rem;
+  }
+  .header-right h2{
+    margin-bottom: 10px;
+  }
+  .daily-quiz{
+    padding: 2rem;
+    margin-top: -2rem;
+  }
+  .activities{
+    padding: 2rem;
+  }
+  
