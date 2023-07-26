@@ -1,0 +1,50 @@
+.domain-head{
+    width: 100%;
+}
+.domain-head h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cardContainer{
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+  @media screen and (max-width:1220px) {
+    .cardContainer{
+    margin-left: 6rem;
+    }
+    .card{
+        margin-left: 7rem;
+    }
+  }
+  @media screen and (max-width:1120px) {
+    .cardContainer{
+    margin-left: 6rem;
+    }
+    .card{
+        margin-left: 5rem;
+    }
+  }
+  @media screen and (max-width:1000px) {
+    .cardContainer{
+    margin-left: 3rem;
+    }
+    .card{
+        margin-left: 3rem;
+    }
+  }
+  
+  @media screen and (max-width:1000px) {
+    .cardContainer{
+    margin-left: 1rem;
+    }
+    .card{
+        margin-left: 2rem;
+    }
+  }
