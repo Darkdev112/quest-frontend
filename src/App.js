@@ -1,3 +1,4 @@
+
 import React,{useState} from 'react';
 import Landing from './pages/Landing';
 import Domain from './pages/Domain';
@@ -9,6 +10,11 @@ import Quiz2 from "./Quiz2";
 
 import ContactPage from "./Contact";
 
+import { BrowserRouter } from 'react-router-dom';
+
+import "./App.css";
+import Home from './routes/Home'
+
 // function App() {
 //     return (
 //      <Quiz></Quiz>
@@ -16,16 +22,28 @@ import ContactPage from "./Contact";
 //     // <ContactPage></ContactPage>
 //     );
 
-import "./App.css";
+
+
+// import Quiz from "./Quiz";
+// import Quiz2 from "./Quiz2";
 
 function App() {
   return (
-    <div>
-      <Dashboard/>
-      {/* <Quiz2></Quiz2> */}
+
+    // <div>
+    //   <Dashboard/>
+    //   {/* <Quiz2></Quiz2> */}
+
+    <div className='App-main'>
+        <BrowserRouter>
+          <Home/>
+        </BrowserRouter>
+
+    {/* </div> */}
     </div>
   )
+  }
 
-}
+
 
 export default App;
