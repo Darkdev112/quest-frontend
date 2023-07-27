@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import "./App.css";
+import { useNavigate } from "react-router";
 
 function Quiz() {
   // Properties
   const [showResults, setShowResults] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
+  const navigate = useNavigate();
 
   const questions = [
     {
@@ -103,6 +105,7 @@ function Quiz() {
     setScore(0);
     setCurrentQuestion(0);
     setShowResults(false);
+    navigate('/dashboard')
   };
 
   return (

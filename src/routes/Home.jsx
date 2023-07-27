@@ -3,8 +3,10 @@ import axios from 'axios';
 import { Routes, Route } from 'react-router-dom';
 import Landing from '../pages/Landing'
 import Domain from '../pages/Domain'
-import Sign_up from '../component/SignUp'
+import Signup from '../component/SignUp'
+import Login from '../component/Login'
 import Dashboard from '../pages/Dashboard'
+import Quiz from '../Quiz';
 
 const Home = () => {
     const [userDetails, setUserDetails] = useState();
@@ -19,8 +21,8 @@ const Home = () => {
                     'Authorization': `Bearer ${token}`
                 }
             })
-            if (response.data.status === "ok") {
-                setUserDetails(response.data.data)
+            if (response.data.user) {
+                setUserDetails(response.data.user)
             } else {
                 console.log("single user fetch failed");
             }
@@ -34,9 +36,11 @@ const Home = () => {
     return (
         <Routes>
             <Route path='/' element={<Landing userDetails = {userDetails} />} />
-            <Route path='/signup' element={<Sign_up/>} />
-            <Route path='/dashboard' element={<Dashboard userDetails = {userDetails}/>} />
-            <Route path='/domain' element={<Domain userDetails={userDetails}/>} />
+            <Route path='/signup' element={<Signup/>} />
+            <Route path='/login' element={<Login/>} />
+            <Route path='/dashboard' element={<Dashboard />} />
+            <Route path='/domain' element={<Domain/>} />
+            <Route path='/quiz' element={<Quiz/>} />
         </Routes>
     )
 }
