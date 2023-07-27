@@ -3,7 +3,7 @@ import axios from 'axios'
 import './Dashboard.scss'
 import avatar from '../Assets/images/img_avatar2.png'
 import checkup from '../Assets/images/12810348_5063406-removebg-preview.png'
-import Track_quiz from '../component/Track_quiz'
+import Trackquiz from '../component/Trackquiz'
 import Barr from '../component/Barr'
 import Daily_progress from '../component/Daily_progress'
 import { useNavigate } from 'react-router'
@@ -85,7 +85,7 @@ function Dashboard() {
    <h2>Your Daily Quizzes</h2>
    </div>
    <div className='track'>
-   <Track_quiz/>
+   <Trackquiz/>
    </div>
   <div className='activities'>
   <div className='activities-content'>
