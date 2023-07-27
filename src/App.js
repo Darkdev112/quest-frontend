@@ -2,6 +2,9 @@ import React,{useState} from 'react'
 import { BrowserRouter } from 'react-router-dom';
 import "./App.css";
 import Home from './routes/Home'
+import AboutUs from './pages/AboutUs';
+import Landing from './pages/Landing';
+import Dashboard from './pages/Dashboard';
 // import Quiz from "./Quiz";
 // import Quiz2 from "./Quiz2";
 
@@ -9,7 +12,9 @@ function App() {
   return (
     <div className='App-main'>
         <BrowserRouter>
-          <Home/>
+         { /*<Landing/>
+  <AboutUs/>*/}
+<Dashboard/>
         </BrowserRouter>
     </div>
   )

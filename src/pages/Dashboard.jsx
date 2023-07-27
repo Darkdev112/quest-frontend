@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import './Dashboard.scss'
-import avatar from '../Assets/images/img_avatar2.png'
+import avatar from '../Assets/images/michael-dam-mEZ3PoFGs_k-unsplash.jpg'
 import checkup from '../Assets/images/12810348_5063406-removebg-preview.png'
 import Trackquiz from '../component/Trackquiz'
 import Barr from '../component/Barr'
