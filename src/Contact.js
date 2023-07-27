@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import "./App.css";
-import Quiz from "./Quiz";
-import Quiz2 from "./Quiz2";
 
 function ContactPage() {
     return (
-   <>
+   <div>
    <div className="Contact"> 
   <h1 className="Head5"> Contact us</h1>
   <div className="Contact2">
@@ -35,7 +33,7 @@ function ContactPage() {
     </ul>
     </div>
   </div>
-   </>
+   </div>
     );
 }
 

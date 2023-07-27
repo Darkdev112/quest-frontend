@@ -3,9 +3,7 @@
 body {
   font-family: "Roboto", sans-serif;
   background:#d2eaf1;
-
 }
-
 .circle-wrap {
   margin: 150px auto;
   width: 150px;
@@ -22,7 +20,6 @@ body {
   position: absolute;
   border-radius: 50%;
 }
-
 .circle-wrap .circle .mask {
   clip: rect(0px, 150px, 150px, 75px);
 }
