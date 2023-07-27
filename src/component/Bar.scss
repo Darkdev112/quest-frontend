@@ -1,0 +1,28 @@
+.bar-graph {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  .bar {
+    fill: brown;
+  }
+  .axis {
+    font: 10px sans-serif;
+    margin: 80px;
+  }
+  
+  .x.axis {
+    margin-left: 20px;
+  }
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+  
+  .x.axis path {
+    display: none;
+  }
+  .y.axis {
+    margin: 50px;
+  }
