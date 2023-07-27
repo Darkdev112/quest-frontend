@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Cairo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Tilt+Prism&display=swap');
-body{
+.App{
   background-image: url("https://images.unsplash.com/photo-1628771065518-0d82f1938462?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
   background-repeat: no-repeat;
   background-position:center;
@@ -25,7 +25,16 @@ body{
   
   color: rgb(0, 0, 0);
 }
-
+.Head5{
+  font-size: 2.5rem;
+  font-weight: 800;
+  font-family: 'Source Code Pro', monospace;
+  color: rgb(73, 52, 0);
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  align-items: center;
+}
 .question-card {
   display: flex;
   flex-direction: row;
@@ -55,8 +64,21 @@ body{
   font-family: 'Cairo', sans-serif;
   color: rgb(255, 255, 255);
 } 
-
-li {
+.C1{
+  list-style: none;
+}
+.C2{
+  list-style:none;
+}
+.C3{
+  list-style: none;
+}
+.Contact2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.Options {
 
   margin-top: 8px;
   background-color: rgb(42, 188, 255);
@@ -109,4 +131,66 @@ button {
   font-weight: bold;
 
   border-radius: 24px;
+}
+.Contact{
+  background-color: rgb(0, 128, 220);
+}
+.circle-wrap {
+  margin: 15px auto;
+  width: 150px;
+  height: 150px;
+  background: #fefcff;
+  border-radius: 50%;
+  border: 1px solid #cdcbd0;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+  clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap .inside-circle {
+  width: 122px;
+  height: 122px;
+  border-radius: 50%;
+  background: #d2eaf1;
+  line-height: 120px;
+  text-align: center;
+  margin-top: 14px;
+  margin-left: 14px;
+  color: #1e51dc;
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+/* color animation */
+
+/* 3rd progress bar */
+.mask .fill {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #227ded;
+}
+
+.mask.full,
+.circle .fill {
+  animation: fill ease-in-out 3s;
+  transform: rotate(135deg);
+}
+
+@keyframes fill{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(135deg);
+  }
 }

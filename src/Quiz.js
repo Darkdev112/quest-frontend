@@ -119,15 +119,26 @@ function Quiz() {
       {/* 3. Show results or show the question game  */}
       {showResults ? (
         /* 4. Final Results */
-        <div className="final-results">
-          {/* <h1>Final Results</h1>
-          <h2>
-            {score} out of {questions.length} correct - (
-            {(score / questions.length) * 100}%)
-          </h2> */}
-          <h2 className="Head4">See your performance analysis</h2>
-          <button onClick={() => restartGame()}>Analysis</button>
+        // <div className="final-results">
+        //   {/* <h1>Final Results</h1>
+        //   <h2>
+        //     {score} out of {questions.length} correct - (
+        //     {(score / questions.length) * 100}%)
+        //   </h2> */}
+        //   <h2 className="Head4">See your performance analysis</h2>
+        //   <button onClick={() => restartGame()}>Analysis</button>
+        // </div>
+        <div class="circle-wrap">
+        <div class="circle">
+          <div class="mask full">
+            <div class="fill"></div>
+          </div>
+          <div class="mask half">
+            <div class="fill"></div>
+          </div>
+          <div class="inside-circle"> 75% </div>
         </div>
+      </div>
       ) : (
         /* 5. Question Card  */
         <div className="question-card">
@@ -142,7 +153,7 @@ function Quiz() {
           <ul className="Ques">
             {questions[currentQuestion].options.map((option) => {
               return (
-                <li
+                <li className="Options"
                   key={option.id}
                   onClick={() => optionClicked(option.isCorrect)}
                 >
