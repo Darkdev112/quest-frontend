@@ -14,32 +14,19 @@ import { BrowserRouter } from 'react-router-dom';
 
 import "./App.css";
 import Home from './routes/Home'
-
-// function App() {
-//     return (
-//      <Quiz></Quiz>
-//     //  <Quiz2></Quiz2>
-//     // <ContactPage></ContactPage>
-//     );
-
-
-
+import AboutUs from './pages/AboutUs';
+import Landing from './pages/Landing';
+import Dashboard from './pages/Dashboard';
 // import Quiz from "./Quiz";
 // import Quiz2 from "./Quiz2";
 
 function App() {
   return (
-
-    // <div>
-    //   <Dashboard/>
-    //   {/* <Quiz2></Quiz2> */}
-
     <div className='App-main'>
         <BrowserRouter>
-          <Home/>
+        <Landing/>
+          <AboutUs/>
         </BrowserRouter>
-
-    {/* </div> */}
     </div>
   )
   }
