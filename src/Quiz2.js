@@ -148,7 +148,7 @@ function Quiz2() {
           <ul className="Ques">
             {questions[currentQuestion].options.map((option) => {
               return (
-                <li
+                <li className="Options"
                   key={option.id}
                   onClick={() => optionClicked(option.isCorrect)}
                 >
