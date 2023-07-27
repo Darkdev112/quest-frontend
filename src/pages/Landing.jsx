@@ -2,7 +2,8 @@ import React from 'react';
 import VideoCarousel from './VideoCarousel';
 import {Link} from 'react-router-dom'
 import './Landing.scss'
-
+import Aboutt from './Aboutt';
+import ContactPage from '../Contact';
 
 
 function Landing({userDetails}) {
@@ -17,6 +18,8 @@ function Landing({userDetails}) {
         </div>
         </div>
         <VideoCarousel/>
+        <Aboutt/>
+        <ContactPage/>
     </div>
   );
 }

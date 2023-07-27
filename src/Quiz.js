@@ -15,24 +15,24 @@ function Quiz() {
       options: [
         { id: 0, text: "Always" },
         { id: 1, text: "Often" },
-        { id: 2, text: "Ocassionally"},
+        { id: 2, text: "Ocassionally" },
         { id: 3, text: "Sometimes" },
-        { id: 4, text: "Never"},
+        { id: 4, text: "Never" },
       ],
     },
     {
       text: "Have you tried to cut down or stop drinking in the past? If so, were you successful?",
       options: [
-        { id: 0, text: "Yes,I was successful"},
-        { id: 1, text: "Yes,not successful"},
-        { id: 2, text: "Never"},
+        { id: 0, text: "Yes,I was successful" },
+        { id: 1, text: "Yes,not successful" },
+        { id: 2, text: "Never" },
       ],
     },
     {
       text: "Have you experienced withdrawal symptoms when you stop drinking or reduce alcohol intake? ",
       options: [
         { id: 0, text: "Usually" },
-        { id: 1, text: "Sometimes"},
+        { id: 1, text: "Sometimes" },
         { id: 2, text: "Never" },
       ],
     },
@@ -40,21 +40,21 @@ function Quiz() {
       text: "Have you continued to drink even though it has caused problems in your personal or professional life?",
       options: [
         { id: 0, text: "Yes" },
-        { id: 1, text: "No"},
+        { id: 1, text: "No" },
       ],
     },
     {
       text: "Has your alcohol consumption negatively affected your relationships with family and friends?",
       options: [
         { id: 0, text: "Yes" },
-        { id: 1, text: "No"},
+        { id: 1, text: "No" },
       ],
     },
     {
       text: "Have you neglected responsibilities or given up activities that were once important to you because of your alcohol use?",
       options: [
         { id: 0, text: "Often" },
-        { id: 1, text: "Sometimes"},
+        { id: 1, text: "Sometimes" },
         { id: 2, text: "Never" },
       ],
     },
@@ -62,7 +62,7 @@ function Quiz() {
       text: "Have others expressed concern about your alcohol consumption?",
       options: [
         { id: 0, text: "Yes" },
-        { id: 1, text: "Yes,Sometimes"},
+        { id: 1, text: "Yes,Sometimes" },
         { id: 2, text: "No" },
       ],
     },
@@ -70,7 +70,7 @@ function Quiz() {
       text: "How many times do u pee ,have acidic stomach and a disturbed sleep cycle?",
       options: [
         { id: 0, text: "Often" },
-        { id: 1, text: "Sometimes"},
+        { id: 1, text: "Sometimes" },
         { id: 2, text: "Never" },
       ],
     },
@@ -78,10 +78,10 @@ function Quiz() {
       text: "Do you have change in body temperature?",
       options: [
         { id: 0, text: "Often" },
-        { id: 1, text: "Sometimes"},
+        { id: 1, text: "Sometimes" },
         { id: 2, text: "Never" },
-    ],
-   },
+      ],
+    },
   ];
 
   // Helper Functions
@@ -106,6 +106,7 @@ function Quiz() {
     setCurrentQuestion(0);
     setShowResults(false);
     navigate('/dashboard')
+    window.location.reload(true)
   };
 
   return (
@@ -128,26 +129,31 @@ function Quiz() {
         //   <h2 className="Head4">See your performance analysis</h2>
         //   <button onClick={() => restartGame()}>Analysis</button>
         // </div>
-        <div class="circle-wrap">
-        <div class="circle">
-          <div class="mask full">
-            <div class="fill"></div>
+        <>
+          <div class="circle-wrap">
+            <div class="circle">
+              <div class="mask full">
+                <div class="fill"></div>
+              </div>
+              <div class="mask half">
+                <div class="fill"></div>
+              </div>
+              <div class="inside-circle"> 75% </div>
+            </div>
           </div>
-          <div class="mask half">
-            <div class="fill"></div>
+          <div>
+            <button onClick={restartGame}>Dashboard</button>
           </div>
-          <div class="inside-circle"> 75% </div>
-        </div>
-      </div>
+        </>
       ) : (
         /* 5. Question Card  */
         <div className="question-card">
           {/* Current Question  */}
           <div className="Ques-Ans">
-          <h2 className="Head3">
-            Question:{currentQuestion + 1} out of {questions.length}
-          </h2>
-          <h3 className="question-text">{questions[currentQuestion].text}</h3>
+            <h2 className="Head3">
+              Question:{currentQuestion + 1} out of {questions.length}
+            </h2>
+            <h3 className="question-text">{questions[currentQuestion].text}</h3>
           </div>
           {/* List of possible answers  */}
           <ul className="Ques">
