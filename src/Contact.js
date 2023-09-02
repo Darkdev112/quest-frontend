@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
-import Quiz from "./Quiz";
-import Quiz2 from "./Quiz2";
+// import Quiz from "./pages/Quiz";
+// import Quiz2 from "./Quiz2";
 
 function ContactPage() {
     return (

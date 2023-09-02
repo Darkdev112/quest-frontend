@@ -6,7 +6,7 @@ import Domain from '../pages/Domain'
 import Signup from '../component/SignUp'
 import Login from '../component/Login'
 import Dashboard from '../pages/Dashboard'
-import Quiz from '../Quiz';
+import Quiz from '../pages/Quiz';
 
 const Home = () => {
     const [userDetails, setUserDetails] = useState();

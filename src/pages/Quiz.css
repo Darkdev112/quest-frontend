@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Cairo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Tilt+Prism&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Tilt+Prism&display=swap');
+
+
+.Quiz_bg{
+    background-image: url("https://images.unsplash.com/photo-1628771065518-0d82f1938462?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    padding: 4rem;
+    margin:0;
+  }
+  .Quiz_bg {
+    text-align: center;
+  }
+  .Head2{
+    padding-top: 0rem;
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: 'Source Code Pro', monospace;
+    color: rgb(73, 52, 0);
+    padding-bottom: 2rem;
+    
+  }
+  .Head3{
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: 'Cairo', sans-serif;
+    /* font-family: 'Tilt Prism', cursive; */
+    
+    color: rgb(0, 0, 0);
+  }
+  .Head4{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 2rem;
+    font-family: 'Source Code Pro', monospace;
+  }
+  .question-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* Center the div  */
+    margin: 0 auto;
+  
+    /* Dimensions  */
+    width: 60%; /* Can be in percentage also. */
+    height: auto;
+    /* padding-top: 4rem; */
+  
+    /* Visual  */
+    background-color: whitesmoke;
+    opacity: 90%;
+    padding: 2rem;
+    border-radius: 10px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 30px 60px -12px,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+     
+  }
+  
+  .Ques{
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: 'Source Code Pro', monospace;
+    color: rgb(255, 255, 255);
+    padding: 2rem;
+  } 
+  .Option {
+    font-size: 1rem;
+    font-family: 'Source Code Pro', monospace;
+    /* font-family: 'Tilt Prism', cursive; */
+    margin-top: 8px;
+    /* background-color: rgb(42, 188, 255); */
+padding: 0.5rem;
+    /* border: 0.5px solid rgb(0, 0, 0); */
+    border-radius: 0.5rem;
+    
+    width:20rem;
+  }
+  .option-0{
+    background-color: red;
+  }
+  .option-1{
+    background-color: rgb(255, 123, 0);
+  }
+  .option-2{
+    background-color: rgb(245, 181, 33);
+  }
+  .option-3{
+    background-color: rgb(64, 251, 17);
+  }
+  .option-4{
+    background-color: green;
+  }
+  
+  .Ques-Ans{
+    display: flex;
+    flex-direction: column;
+  }
+  .question-text {
+    color: rgb(16, 0, 54);
+    font-size: 1.3rem;
+    font-family: 'Source Code Pro', monospace;
+    padding: 0.3rem;
+  }
+  
+  /* Final Results  */
+  
+  .final-results {
+    /* Center the div  */
+    margin: 0 auto;
+  
+    /* Dimensions  */
+    width: 50%; /* Can be in percentage also. */
+    height: auto;
+    margin-top: 64px;
+  
+    /* Visual  */
+    background-color: rgb(242, 177, 11);
+    padding: 16px;
+    border-radius: 16px;
+    color: rgb(255, 255, 255);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  }
+  .circle-wrap {
+    margin: 15px auto;
+    width: 150px;
+    height: 150px;
+    background: #fefcff;
+    border-radius: 50%;
+    border: 1px solid #cdcbd0;
+  }
+  
+  .circle-wrap .circle .mask,
+  .circle-wrap .circle .fill {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+  }
+  
+  .circle-wrap .circle .mask {
+    clip: rect(0px, 150px, 150px, 75px);
+  }
+  
+  .circle-wrap .inside-circle {
+    width: 122px;
+    height: 122px;
+    border-radius: 50%;
+    background: #d2eaf1;
+    line-height: 120px;
+    text-align: center;
+    margin-top: 14px;
+    margin-left: 14px;
+    color: #1e51dc;
+    position: absolute;
+    z-index: 100;
+    font-weight: 700;
+    font-size: 2em;
+  }
+  
+  /* color animation */
+  
+  /* 3rd progress bar */
+  .mask .fill {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #227ded;
+  }
+  
+  .mask.full,
+  .circle .fill {
+    animation: fill ease-in-out 3s;
+    transform: rotate(135deg);
+  }
+  
+  @keyframes fill{
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(135deg);
+    }
+  }

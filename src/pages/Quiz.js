@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "./App.css";
+// import "./App.css";
+import "./Quiz.css";
 import { useNavigate } from "react-router";
 
 function Quiz() {
@@ -11,77 +12,105 @@ function Quiz() {
 
   const questions = [
     {
-      text: "How often do you consume alcohol?",
+      text: "When did you start drinking  alcohol and how has your drinking pattern evolved over the years?",
       options: [
-        { id: 0, text: "Always" },
-        { id: 1, text: "Often" },
-        { id: 2, text: "Ocassionally"},
-        { id: 3, text: "Sometimes" },
+        { id: 0, text: "More than 2 years ago." },
+        {id: 1, text: "A year ago." },
+        { id: 2, text: "6 months ago."},
+        { id: 3, text: "6 months ago." },
+        { id: 4, text: "Few weeks ago."},
+      ],
+    },
+    {
+      text: "How often do you drink alcohol?",
+      options: [
+        { id: 0, text: "Always"},
+        { id: 1, text: "Often"},
+        { id: 2, text: "Sometimes"},
+        { id: 3, text: "Rarely" },
         { id: 4, text: "Never"},
       ],
     },
     {
-      text: "Have you tried to cut down or stop drinking in the past? If so, were you successful?",
+      text: "Have you experienced any blackouts or memory lapse due to alcohol?",
       options: [
-        { id: 0, text: "Yes,I was successful"},
-        { id: 1, text: "Yes,not successful"},
-        { id: 2, text: "Never"},
+        { id: 0, text: "Always"},
+        { id: 1, text: "Often"},
+        { id: 2, text: "Sometimes"},
+        { id: 3, text: "Rarely" },
+        { id: 4, text: "Never"},
       ],
     },
     {
-      text: "Have you experienced withdrawal symptoms when you stop drinking or reduce alcohol intake? ",
+      text: "Are there any specific situations or emotions or triggers that lead you to drnik?",
       options: [
-        { id: 0, text: "Usually" },
-        { id: 1, text: "Sometimes"},
-        { id: 2, text: "Never" },
+        { id: 0, text: "Depression and Anxiety"},
+        { id: 1, text: "Stress"},
+        { id: 2, text: "Peer pressure"},
+        { id: 3, text: "Interests" },
+        { id: 4, text: "None"},
       ],
     },
     {
-      text: "Have you continued to drink even though it has caused problems in your personal or professional life?",
+      text: "Has alcohol affected your academic or work performances?",
       options: [
-        { id: 0, text: "Yes" },
-        { id: 1, text: "No"},
+        { id: 0, text: "Always"},
+        { id: 1, text: "Often"},
+        { id: 2, text: "Sometimes"},
+        { id: 3, text: "Rarely" },
+        { id: 4, text: "Not anymore"},
       ],
     },
     {
-      text: "Has your alcohol consumption negatively affected your relationships with family and friends?",
+      text: "Do you find it difficult to control the amount you drink once you start?",
       options: [
-        { id: 0, text: "Yes" },
-        { id: 1, text: "No"},
+        { id: 0, text: "Always"},
+        { id: 1, text: "Often"},
+        { id: 2, text: "Sometimes"},
+        { id: 3, text: "Rarely" },
+        { id: 4, text: "Not anymore"},
       ],
     },
     {
-      text: "Have you neglected responsibilities or given up activities that were once important to you because of your alcohol use?",
+      text: "Have your relationships with family, friends, or colleagues been affected by your drinking?",
       options: [
-        { id: 0, text: "Often" },
-        { id: 1, text: "Sometimes"},
-        { id: 2, text: "Never" },
+        { id: 0, text: "Always"},
+        { id: 1, text: "Often"},
+        { id: 2, text: "Sometimes"},
+        { id: 3, text: "Rarely" },
+        { id: 4, text: "Not anymore"},
       ],
     },
     {
-      text: "Have others expressed concern about your alcohol consumption?",
+      text: "Have you ever tried to quit alcohol?",
       options: [
-        { id: 0, text: "Yes" },
-        { id: 1, text: "Yes,Sometimes"},
-        { id: 2, text: "No" },
+        { id: 0, text: "Every year"},
+        { id: 1, text: "Every 6 months"},
+        { id: 2, text: "Few months ago"},
+        { id: 3, text: "This week" },
+        { id: 4, text: "Few days ago"},
       ],
     },
     {
-      text: "How many times do u pee ,have acidic stomach and a disturbed sleep cycle?",
+      text: "Have you experienced withdrawal symptoms when you've tried to stop drinking in the past?",
       options: [
-        { id: 0, text: "Often" },
-        { id: 1, text: "Sometimes"},
-        { id: 2, text: "Never" },
+        { id: 0, text: "Always"},
+        { id: 1, text: "Often"},
+        { id: 2, text: "Sometimes"},
+        { id: 3, text: "Rarely" },
+        { id: 4, text: "Never"},
       ],
-    },
-    {
-      text: "Do you have change in body temperature?",
-      options: [
-        { id: 0, text: "Often" },
-        { id: 1, text: "Sometimes"},
-        { id: 2, text: "Never" },
-    ],
    },
+   {
+    text: "Have you participated in any alcohol treatment programs or therapy sessions in the past?",
+    options: [
+      { id: 0, text: "Never"},
+      { id: 1, text: "Rarely"},
+      { id: 2, text: "Sometimes"},
+      { id: 3, text: "Often" },
+      { id: 4, text: "Always"},
+    ],
+ },
   ];
 
   // Helper Functions
@@ -109,9 +138,10 @@ function Quiz() {
   };
 
   return (
-    <div className="App">
+    <div className="Quiz_bg">
       {/* 1. Header  */}
       <h1 className="Head2">Take a Short Quiz</h1>
+      <p className="Head4">Choose the options that best describes your current situation.</p>
 
       {/* 2. Current Score  */}
       {/* <h2>Score: {score}</h2> */}
@@ -153,7 +183,7 @@ function Quiz() {
           <ul className="Ques">
             {questions[currentQuestion].options.map((option) => {
               return (
-                <li className="Options"
+                <li className={`Option option-${option.id}`}
                   key={option.id}
                   onClick={() => optionClicked(option.isCorrect)}
                 >
