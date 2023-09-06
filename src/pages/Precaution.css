@@ -1,0 +1,341 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Tilt+Prism&display=swap');
+.precaution{
+    background-image: url("https://images.unsplash.com/photo-1628179487664-a1f95c267a26?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.prevent{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: orange;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Source Code Pro', monospace;
+}
+.prevent p{
+    color: brown;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.prec{
+    padding: 2rem;
+}
+.PPart1{
+color:brown;
+font-size: 3rem;
+font-weight: 600;
+font-family: 'Source Code Pro', monospace;
+}
+.Box1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.Boxl1{
+
+    padding: 2rem;
+    width: 40rem;
+    height: 20rem;
+    background-color: black;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+    /* overflow: 'scroll';
+    overflow-y: scroll; */
+    overflow-y: scroll;
+   
+
+
+}
+.Box h2{
+    padding-bottom: 1rem;
+    font-family: 'Source Code Pro', monospace;
+    color: orange;
+    font-size: 2rem;
+    text-align: left;
+    align-self: flex-end;
+}
+.Boxl1 h2{
+    padding:1rem;
+    font-family: 'Source Code Pro', monospace;
+    color: orange;
+    font-size: 2rem;
+    text-orientation: upright;
+   
+
+}
+.box1p{
+    padding:1rem;
+    font-family: 'Source Code Pro', monospace;
+
+ 
+}
+.box1p li{
+    padding: 1rem;
+}
+.Boxr1 
+{
+ 
+    padding: 2rem;
+    width: 40rem;
+    height: 20rem;
+    background-image: url("https://images.unsplash.com/photo-1611571940159-425a28706d6f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1965&q=80");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    font-family: 'Source Code Pro', monospace;
+    overflow-y: scroll;
+
+}
+
+    
+.Boxr1 p{
+    color:grey;
+    font-size: 1rem;
+padding-bottom: 0.5rem;
+font-weight: 600;
+   
+}
+.Boxr2 p{
+    color:grey;
+    font-size: 1rem;
+padding-bottom: 0.5rem;
+font-weight: 600;
+}
+.Boxr3 p{
+    color:grey;
+    font-size: 1rem;
+padding-bottom: 0.5rem;
+font-weight: 600;
+}
+.Boxr4 p{
+    color:grey;
+    font-size: 1rem;
+padding-bottom: 0.5rem;
+font-weight: 600;
+}
+.Boxr5 p{
+    color:grey;
+    font-size: 1rem;
+padding-bottom: 0.5rem;
+font-weight: 600;
+}
+.Boxr6 p{
+    color:grey;
+    font-size: 1rem;
+padding-bottom: 0.5rem;
+font-weight: 600;
+}
+.Boxr7 p{
+    color:grey;
+    font-size: 1rem;
+padding-bottom: 0.5rem;
+font-weight: 600;
+}
+
+.Boxr8 p{
+    color:grey;
+    font-size: 1rem;
+padding-bottom: 0.5rem;
+font-weight: 600;
+}
+
+
+.Boxrw1 {
+    padding: 1rem;
+ 
+}
+.Boxrw2{
+    padding: 1rem;
+}
+.Boxrw3{
+    padding: 1rem;
+}
+.Boxrw4 {
+    padding: 1rem;
+}
+.Boxrw5{
+    padding: 1rem;
+}
+.Boxrw6{
+    padding: 1rem;
+}
+.Boxrw7{
+    padding: 1rem;
+}
+
+.Boxrw8{
+    padding: 1rem;
+}
+.Boxrw1 ul {
+    font-size: 1rem;
+    padding: 0.3rem;
+color:black;
+padding-bottom: 1rem;
+
+}
+.Boxrw2 ul{
+    font-size: 1rem;
+    padding: 0.3rem;
+color:black;
+padding-bottom: 1rem;
+}
+.Boxrw3 ul{
+    font-size: 1rem;
+    padding: 0.3rem;
+color:black;
+padding-bottom: 1rem;
+}
+.Boxrw4 ul{
+    font-size: 1rem;
+    padding: 0.3rem;
+color:black;
+padding-bottom: 1rem;
+}
+.Boxrw5 ul{
+    font-size: 1rem;
+    padding: 0.3rem;
+color:black;
+padding-bottom: 1rem;
+}
+.Boxrw6 ul{
+    font-size: 1rem;
+    padding: 0.3rem;
+color:black;
+padding-bottom: 1rem;
+}
+.Boxrw7 ul{
+    font-size: 1rem;
+    padding: 0.3rem;
+color:black;
+padding-bottom: 1rem;
+}
+.Boxrw8 ul{
+    font-size: 1rem;
+    padding: 0.3rem;
+color:black;
+padding-bottom: 1rem;
+}
+.Boxr1 li {
+    list-style: none;
+   
+}
+.Boxr2 li{
+list-style: none;
+}
+.Boxr4 li{
+    list-style: none;
+}
+.Boxr5 li{
+    list-style: none;
+}
+.Boxr6 li{
+    list-style: none;
+}
+.Boxr7 li{
+    list-style: none;
+}
+.Boxr8 li{
+    list-style: none;
+}
+.ps{
+    padding-top: 2rem;
+    color:grey;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.gamewr{
+    color: black;
+}
+.Boxr2{
+    padding: 2rem;
+    width: 40rem;
+    height: 20rem;
+    background-image: url("https://images.unsplash.com/photo-1486401899868-0e435ed85128?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    font-family: 'Source Code Pro', monospace;
+    overflow-y: scroll;
+}
+.Boxr3{
+    padding: 2rem;
+    width: 40rem;
+    height: 20rem;
+    background-image: url("https://images.unsplash.com/photo-1551817958-c5b51e7b4a33?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+    background-position: flex-end;
+    background-size: cover;
+    background-repeat: no-repeat;
+  background-blend-mode: lighten;
+    font-family: 'Source Code Pro', monospace;
+    overflow-y: scroll;
+}
+.Boxr4{
+    padding: 2rem;
+    width: 40rem;
+    height: 20rem;
+    background-image: url("https://images.unsplash.com/photo-1543307757-b6f2a50ff6d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1781&q=80");
+    background-position: flex-end;
+    background-size: cover;
+    background-repeat: no-repeat;
+  background-blend-mode: lighten;
+    font-family: 'Source Code Pro', monospace;
+    overflow-y: scroll;
+}
+.Boxr5{
+    padding: 2rem;
+    width: 40rem;
+    height: 20rem;
+    background-image: url("https://images.unsplash.com/photo-1513128034602-7814ccaddd4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80");
+    background-position: flex-end;
+    background-size: cover;
+    background-repeat: no-repeat;
+  background-blend-mode: lighten;
+    font-family: 'Source Code Pro', monospace;
+    overflow-y: scroll;
+}
+.Boxr6{
+    padding: 2rem;
+    width: 40rem;
+    height: 20rem;
+    background-image: url("https://images.unsplash.com/photo-1603988363607-e1e4a66962c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+    background-position: flex-end;
+    background-size: cover;
+    background-repeat: no-repeat;
+  background-blend-mode: lighten;
+    font-family: 'Source Code Pro', monospace;
+    overflow-y: scroll;
+}
+
+.Boxr7{
+    padding: 2rem;
+    width: 40rem;
+    height: 20rem;
+    background-image: url("https://images.unsplash.com/photo-1574157668644-cce54591add8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80");
+    background-position: flex-end;
+    background-size: cover;
+    background-repeat: no-repeat;
+  background-blend-mode: lighten;
+    font-family: 'Source Code Pro', monospace;
+    overflow-y: scroll;
+}
+.Boxr8{
+    padding: 2rem;
+    width: 40rem;
+    height: 20rem;
+    background-image: url("https://images.unsplash.com/photo-1519162808019-7de1683fa2ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1975&q=80");
+    background-position: flex-end;
+    background-size: cover;
+    background-repeat: no-repeat;
+  background-blend-mode: lighten;
+    font-family: 'Source Code Pro', monospace;
+    overflow-y: scroll;
+}

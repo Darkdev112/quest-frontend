@@ -1,14 +1,14 @@
 
 import React,{useState} from 'react';
-import Landing from './pages/Landing';
-import Domain from './pages/Domain';
-import Login from './component/Login';
-import Sign_up from './component/SignUp';
-import Dashboard from './pages/Dashboard';
-// import Quiz from "./Quiz";
-// import Quiz2 from "./pages/Quiz2";
+// import Landing from './pages/Landing';
+// import Domain from './pages/Domain';
+// import Login from './component/Login';
+// import Sign_up from './component/SignUp';
+// import Dashboard from './pages/Dashboard';
+//  import Quiz from "./pages/Quiz";
+// // import Quiz2 from "./pages/Quiz2";
 
-import ContactPage from "./Contact";
+// import ContactPage from "./Contact";
 
 import { BrowserRouter } from 'react-router-dom';
 

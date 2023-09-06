@@ -7,6 +7,7 @@ import Signup from '../component/SignUp'
 import Login from '../component/Login'
 import Dashboard from '../pages/Dashboard'
 import Quiz from '../pages/Quiz';
+// import Precaution from '../pages/Precaution';
 
 const Home = () => {
     const [userDetails, setUserDetails] = useState();
@@ -41,6 +42,7 @@ const Home = () => {
             <Route path='/dashboard' element={<Dashboard />} />
             <Route path='/domain' element={<Domain/>} />
             <Route path='/quiz' element={<Quiz/>} />
+            {/* <Route path='/precaution' element={<Precaution/>} /> */}
         </Routes>
     )
 }

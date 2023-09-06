@@ -18,6 +18,10 @@ function Card({ data }) {
         console.log(response.data.user);
         navigate('/quiz')
       }
+      // else if(response.data?.user){
+      //   console.log(response.data.user);
+      //   navigate('/precaution')
+      // }
     } catch (error) {
       console.log(error);
     }
