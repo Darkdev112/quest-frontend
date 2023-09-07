@@ -8,7 +8,7 @@ function Card({ data }) {
   const handleClick = async () => {
     const token = localStorage.getItem('token')
     try {
-      const response = await axios.patch('http://localhost:8000/setdomain',{domain : data.title}, {
+      const response = await axios.patch('http://localhost:8000/setdomain',{domain : data.tag}, {
         headers: {
           'Content-Type': 'application/json',
           'Authorization' : `Bearer ${token}`

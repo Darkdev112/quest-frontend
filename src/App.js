@@ -10,36 +10,19 @@ import React,{useState} from 'react';
 
 // import ContactPage from "./Contact";
 
+import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-
 import "./App.css";
 import Home from './routes/Home'
+import Dashboard from './pages/Dashboard';
 
-// function App() {
-//     return (
-//      <Quiz></Quiz>
-//     //  <Quiz2></Quiz2>
-//     // <ContactPage></ContactPage>
-//     );
-
-
-
-// import Quiz from "./Quiz";
-// import Quiz2 from "./Quiz2";
 
 function App() {
   return (
-
-    // <div>
-    //   <Dashboard/>
-    //   {/* <Quiz2></Quiz2> */}
-
     <div className='App-main'>
         <BrowserRouter>
-          <Home/>
+            <Home/>
         </BrowserRouter>
-
-    {/* </div> */}
     </div>
   )
   }

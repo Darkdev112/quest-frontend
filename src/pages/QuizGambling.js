@@ -9,6 +9,9 @@ function Quiz() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const navigate = useNavigate();
+  const min = 1;
+  const max = 5;
+  const randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
 
   const questions = [
     {
@@ -29,6 +32,7 @@ function Quiz() {
         { id: 2, text: "Sometimes"},
         { id: 3, text: "Rarely" },
         { id: 4, text: "Never"},
+       
       ],
     },
     {
@@ -39,6 +43,7 @@ function Quiz() {
         { id: 2, text: "Sometimes"},
         { id: 3, text: "Rarely" },
         { id: 4, text: "Never"},
+       
       ],
     },
     {
@@ -49,6 +54,7 @@ function Quiz() {
         { id: 2, text: "Peer pressure"},
         { id: 3, text: "Interests" },
         { id: 4, text: "None"},
+      
       ],
     },
     {
@@ -59,41 +65,51 @@ function Quiz() {
         { id: 2, text: "Stained Relations."},
         { id: 3, text: "Bad influence" },
         { id: 4, text: "None"},
+    
       ],
     },
     {
       text: "Has gambling affected your life?",
       options: [
+
         { id: 0, text: "Always"},
         { id: 1, text: "Often"},
         { id: 2, text: "Sometimes"},
         { id: 3, text: "Rarely" },
         { id: 4, text: "Not anymore"},
+
+
       ],
     },
     {
       text: "Have you tried to quit gambling in the past?",
       options: [
+
         { id: 0, text: "Every year"},
         { id: 1, text: "Every 6 months"},
         { id: 2, text: "Few months ago"},
         { id: 3, text: "This week" },
         { id: 4, text: "Few days ago"},
+
+  
       ],
     },
     {
       text: "Do you find it difficult to stop gambling once you've started?",
       options: [
+
         { id: 0, text: "Always"},
         { id: 1, text: "Often"},
         { id: 2, text: "Sometimes"},
         { id: 3, text: "Rarely" },
         { id: 4, text: "Not anymore"},
+
       ],
     },
     {
-      text: "9.Do you want to replace gambling with some healthier coping mechanisms?",
+      text: "Do you want to replace gambling with some healthier coping mechanisms?",
       options: [
+
         { id: 0, text: "Never"},
       { id: 1, text: "Rarely"},
       { id: 2, text: "Sometimes"},
@@ -102,7 +118,7 @@ function Quiz() {
       ],
    },
    {
-    text: "Have you participated in any alcohol treatment programs or therapy sessions in the past?",
+    text: " Would you like to handle moments when you feel the urge to gamble?",
     options: [
       { id: 0, text: "Never"},
       { id: 1, text: "Rarely"},
@@ -111,6 +127,7 @@ function Quiz() {
       { id: 4, text: "Always"},
     ],
  },
+
   ];
 
   // Helper Functions
@@ -158,26 +175,75 @@ function Quiz() {
         //   <h2 className="Head4">See your performance analysis</h2>
         //   <button onClick={() => restartGame()}>Analysis</button>
         // </div>
-        <div class="circle-wrap">
-        <div class="circle">
-          <div class="mask full">
-            <div class="fill"></div>
+        <>
+          {randomNum===1 &&<div class="circle-wrap">
+            <div class="circle">
+              <div class="mask full">
+                <div class="fill"></div>
+              </div>
+              <div class="mask half">
+                <div class="fill"></div>
+              </div>
+              <div class="inside-circle"> 70% </div>
+            </div>
+          </div>}
+          {randomNum===2 &&<div class="circle-wrap">
+            <div class="circle">
+              <div class="mask full">
+                <div class="fill"></div>
+              </div>
+              <div class="mask half">
+                <div class="fill"></div>
+              </div>
+              <div class="inside-circle"> 75% </div>
+            </div>
+          </div>}
+          {randomNum===3 &&<div class="circle-wrap">
+            <div class="circle">
+              <div class="mask full">
+                <div class="fill"></div>
+              </div>
+              <div class="mask half">
+                <div class="fill"></div>
+              </div>
+              <div class="inside-circle"> 85% </div>
+            </div>
+          </div>}
+          {randomNum===4 &&<div class="circle-wrap">
+            <div class="circle">
+              <div class="mask full">
+                <div class="fill"></div>
+              </div>
+              <div class="mask half">
+                <div class="fill"></div>
+              </div>
+              <div class="inside-circle"> 81% </div>
+            </div>
+          </div>}
+          {randomNum===5 &&<div class="circle-wrap">
+            <div class="circle">
+              <div class="mask full">
+                <div class="fill"></div>
+              </div>
+              <div class="mask half">
+                <div class="fill"></div>
+              </div>
+              <div class="inside-circle"> 79% </div>
+            </div>
+          </div>}
+          <div>
+            <button onClick={restartGame}>Dashboard</button>
           </div>
-          <div class="mask half">
-            <div class="fill"></div>
-          </div>
-          <div class="inside-circle"> 75% </div>
-        </div>
-      </div>
+        </>
       ) : (
         /* 5. Question Card  */
         <div className="question-card">
           {/* Current Question  */}
           <div className="Ques-Ans">
-          <h2 className="Head3">
-            Question:{currentQuestion + 1} out of {questions.length}
-          </h2>
-          <h3 className="question-text">{questions[currentQuestion].text}</h3>
+            <h2 className="Head3">
+              Question:{currentQuestion + 1} out of {questions.length}
+            </h2>
+            <h3 className="question-text">{questions[currentQuestion].text}</h3>
           </div>
           {/* List of possible answers  */}
           <ul className="Ques">
