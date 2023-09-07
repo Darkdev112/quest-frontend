@@ -1,4 +1,5 @@
 .cover{
+
   background-image: url("https://img.freepik.com/premium-photo/home-decoration-furniture-living-room-interior-design-empty-black-wall-background_221619-1068.jpg?w=1060");  
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,25 +11,27 @@
 }
 .side-btn{
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   top: 1rem;
   right: 2rem ;
 }
 .side-btn button{
-  background-color: rgb(85, 155, 217);
-  color:white;
+  background-color: rgb(15, 15, 16);
+  color:rgb(241, 126, 12);
   margin: 10px;
 }
 .Head{
-  color:rgb(36, 36, 35);
+  color:rgb(241, 126, 12);
   font-size: 3.5rem;
   font-weight: 400;
   /* font-family: 'Aclonica', sans-serif; */
   font-family: 'Cairo', sans-serif;
   text-align: center;
   align-items: center;
+  position: absolute;
+  margin: auto;
   display: flex;
-  justify-content:center;
+  justify-content: center;
 }
 @keyframes change{
 0%{
