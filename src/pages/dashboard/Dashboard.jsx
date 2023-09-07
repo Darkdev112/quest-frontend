@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import './Dashboard.scss'
-import avatar from '../Assets/images/img_avatar2.png'
-import checkup from '../Assets/images/12810348_5063406-removebg-preview.png'
-import Trackquiz from '../component/Trackquiz'
-import Barr from '../component/Barr'
-import Daily_progress from '../component/Daily_progress'
+import avatar from '../../Assets/images/img_avatar2.png'
+import checkup from '../../Assets/images/12810348_5063406-removebg-preview.png'
+import Trackquiz from '../../component/progress/Trackquiz'
+import Barr from '../../component/progress/Barr'
+import Daily_progress from '../../component/quiz_score/Daily_progress'
 import { useNavigate } from 'react-router'
 
 function Dashboard() {

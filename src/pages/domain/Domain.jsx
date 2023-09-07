@@ -1,6 +1,6 @@
 import React from 'react'
-import Data from '../component/Data'
-import Card from '../component/Card'
+import Data from '../../component/domain_card/Data'
+import Card from '../../component/domain_card/Card'
 import './Domain.scss';
 
 function Domain() {

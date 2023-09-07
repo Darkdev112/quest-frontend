@@ -1,6 +1,6 @@
 import React from 'react'
 import './Track-quiz.scss'
-import track from '../Assets/images/tired-young-man-pulling-chain.jpg'
+import track from '../../Assets/images/tired-young-man-pulling-chain.jpg'
 
 function Trackquiz() {
   return (
