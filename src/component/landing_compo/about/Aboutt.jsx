@@ -1,7 +1,7 @@
     import React from 'react'
     import './Aboutt.scss'
-    import aboutImg1 from '../Assets/images/bad-habit-concept-with-alcohol-bottles.jpg'
-    import aboutImg2 from '../Assets/images/man-drinks-whiskey-businessman-reads-documents-director-shirt-suspenders.jpg'
+    import aboutImg1 from '../../../Assets/images/bad-habit-concept-with-alcohol-bottles.jpg'
+    import aboutImg2 from '../../../Assets/images/man-drinks-whiskey-businessman-reads-documents-director-shirt-suspenders.jpg'
     
     function Aboutt() {
       return (

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./App.css";
+import "./Quiz.css";
 import { useNavigate } from "react-router";
 
 function Quiz() {
@@ -62,7 +62,7 @@ function Quiz() {
       ],
     },
     {
-      text: "Have others expressed concern about your alcohol consumption?",
+      text: "Have others expressed concern about your alcohol consumption?",
       options: [
         { id: 0, text: "Yes" },
         { id: 1, text: "Yes,Sometimes" },

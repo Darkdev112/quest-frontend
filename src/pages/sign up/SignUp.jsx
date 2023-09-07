@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios';
-import './Login.scss'
+import '../login/Login.scss'
 import PersonIcon from '@mui/icons-material/Person';
 import EmailIcon from '@mui/icons-material/Email';
 import LockIcon from '@mui/icons-material/Lock';
