@@ -8,6 +8,9 @@ function Quiz() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const navigate = useNavigate();
+  const min = 1;
+  const max = 5;
+  const randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
 
   const questions = [
     {
@@ -106,7 +109,6 @@ function Quiz() {
     setCurrentQuestion(0);
     setShowResults(false);
     navigate('/dashboard')
-    window.location.reload(true)
   };
 
   return (
@@ -130,7 +132,18 @@ function Quiz() {
         //   <button onClick={() => restartGame()}>Analysis</button>
         // </div>
         <>
-          <div class="circle-wrap">
+          {randomNum===1 &&<div class="circle-wrap">
+            <div class="circle">
+              <div class="mask full">
+                <div class="fill"></div>
+              </div>
+              <div class="mask half">
+                <div class="fill"></div>
+              </div>
+              <div class="inside-circle"> 70% </div>
+            </div>
+          </div>}
+          {randomNum===2 &&<div class="circle-wrap">
             <div class="circle">
               <div class="mask full">
                 <div class="fill"></div>
@@ -140,7 +153,40 @@ function Quiz() {
               </div>
               <div class="inside-circle"> 75% </div>
             </div>
-          </div>
+          </div>}
+          {randomNum===3 &&<div class="circle-wrap">
+            <div class="circle">
+              <div class="mask full">
+                <div class="fill"></div>
+              </div>
+              <div class="mask half">
+                <div class="fill"></div>
+              </div>
+              <div class="inside-circle"> 85% </div>
+            </div>
+          </div>}
+          {randomNum===4 &&<div class="circle-wrap">
+            <div class="circle">
+              <div class="mask full">
+                <div class="fill"></div>
+              </div>
+              <div class="mask half">
+                <div class="fill"></div>
+              </div>
+              <div class="inside-circle"> 81% </div>
+            </div>
+          </div>}
+          {randomNum===5 &&<div class="circle-wrap">
+            <div class="circle">
+              <div class="mask full">
+                <div class="fill"></div>
+              </div>
+              <div class="mask half">
+                <div class="fill"></div>
+              </div>
+              <div class="inside-circle"> 79% </div>
+            </div>
+          </div>}
           <div>
             <button onClick={restartGame}>Dashboard</button>
           </div>

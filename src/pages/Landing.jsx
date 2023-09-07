@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import VideoCarousel from './VideoCarousel';
 import {Link, useNavigate} from 'react-router-dom'
 import './Navbar.scss'
@@ -8,6 +8,7 @@ import Footer from './Footer';
 
 
 function Landing({userDetails}) {
+  
   console.log(userDetails);
   const navigate=useNavigate();
   const handleClick1=()=>{
