@@ -2,27 +2,27 @@ const Data = [
     {
         img: require("../../src/Assets/images/the-blowup-cItcSJS1sRA-unsplash.jpg"),
         title: "Drugs addiction",
-        tag : "drugsaddiction"
+        tag : "drugs"
     },
     {
         img: require("../Assets/images/kin-li-vPjoYq7XDUU-unsplash.jpg"),
         title: "Gambling addiction",
-        tag : "gamblingaddiction"
+        tag : "gambling"
     },
     {
         img: require("../Assets/images/gian-cescon-N0g-deioHO4-unsplash.jpg"),
         title: "Social media addiction",
-        tag : "socialmediaaddiction"
+        tag : "socialmedia"
     },
     {
         img: require("../Assets/images/onur-binay-9oQYwZXZ-8c-unsplash.jpg"),
         title: "Game addiction",
-        tag : "gameaddiction"
+        tag : "game"
     },
     {
         img: require("../Assets/images/becca-tapert-F0ZiHWliGGM-unsplash.jpg"),
         title: "Sex addiction",
-        tag : "sexaddiction"
+        tag : "sex"
     },
     {
         img: require("../Assets/images/aleksandr-popov-2GNBoMgKYEo-unsplash.jpg"),
@@ -37,12 +37,12 @@ const Data = [
     {
         img: require("../Assets/images/john-arano-h4i9G-de7Po-unsplash.jpg"),
         title: "Fitness addiction",
-        tag : "fitnessaddiction"
+        tag : "fitness"
     },
     {
         img: require("../Assets/images/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg"),
         title: "Work addiction",
-        tag : "workaddiction"
+        tag : "work"
     }
 ]
 export default Data;
