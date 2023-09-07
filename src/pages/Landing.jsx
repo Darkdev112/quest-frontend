@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import VideoCarousel from './VideoCarousel';
 import {Link} from 'react-router-dom'
 import './Landing.scss'
@@ -7,6 +7,7 @@ import ContactPage from '../Contact';
 
 
 function Landing({userDetails}) {
+  
   console.log(userDetails);
   return (
     <div className="Landing">

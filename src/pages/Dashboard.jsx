@@ -48,6 +48,7 @@ function Dashboard() {
         if (response.status === 200) {
           localStorage.removeItem('token')
           navigate('/')
+          window.location.reload(true)
         }
       }
     } catch (error) {
