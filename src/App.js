@@ -10,11 +10,10 @@ import React,{useState} from 'react';
 
 // import ContactPage from "./Contact";
 
-import React from 'react';
+// import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import "./App.css";
 import Home from './routes/Home'
-import Dashboard from './pages/Dashboard';
 
 
 function App() {

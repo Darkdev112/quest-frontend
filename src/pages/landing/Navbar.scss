@@ -29,23 +29,26 @@
 .navbar-container{
     display: flex;
     justify-content: space-between;
-    height: 75px;
+    height: 50px;
     align-items: center;
 }
-
 .side-btn{
-    position: absolute;
-    z-index: -1;
-    top: 2rem;
-    right: 2rem ;
-  }
-  .side-btn button{
-    background-color: rgb(15, 15, 16);
-    color:rgb(241, 126, 12);
-    font-size: .8rem;
-    margin: 10px;
-    cursor:pointer;
-  }
+      position: absolute;
+      z-index: 0;
+       top: 0rem;
+      right: 2rem ;
+     }
+    .side-btn button{
+      background-color: transparent;
+      color:rgb(241, 126, 12);
+       margin: 10px;
+    }
+    
+    .side-btn button:hover{
+        background-color: transparent;
+        color:rgb(244, 243, 242);
+         margin: 10px;
+      }
 .logo{
     order: 1;
     font-size: 2.3rem;

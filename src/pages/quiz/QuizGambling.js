@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+
 // import "./App.css";
+
 import "./Quiz.css";
 import { useNavigate } from "react-router";
 
@@ -82,7 +84,11 @@ function Quiz() {
       ],
     },
     {
+
       text: "Have you tried to quit gambling in the past?",
+
+      text: "Have others expressed concern about your alcohol consumption?",
+
       options: [
 
         { id: 0, text: "Every year"},

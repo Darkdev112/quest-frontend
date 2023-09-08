@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600&display=swap");
+// .logout{
+//   position: absolute;
+//   right: 2rem;
+// }
+
+.centered img{
+  cursor: pointer;
+}
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .left {
+    left: 0;
+    background-color: rgb(194, 222, 231);
+    width:25%; 
+  }
+  .left-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .right {
+    right: 0;
+    background-color: rgb(247, 244, 244);
+    width:75%;
+  }
+  .cards{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   margin-left: 1rem;
+ 
+  }
+  .Card1{
+    background-image: url("https://images.unsplash.com/photo-1538437953550-5b1835cc443d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80") ;
+    border-radius: 1rem;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    padding: 2rem;
+    align-items: center;
+    margin:1rem;
+  }
+  .Card2{
+    background-image: url("https://images.unsplash.com/photo-1504309092620-4d0ec726efa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80") ;
+    border-radius: 1rem;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    padding: 2rem;
+    align-items: center;
+    margin:1rem;
+  }
+  .Card3{
+    background-image: url("https://images.unsplash.com/photo-1509664158680-07c5032b51e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80") ;
+    border-radius: 1rem;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    padding: 2rem;
+    align-items: center;
+    margin:1rem;
+  }
+  .Card1b{
+    border-radius: 1rem;
+    border-color:white;
+    color:rgb(130, 52, 73);
+   padding: 0.5rem; 
+
+  }
+  .Card2b{
+    border-radius: 1rem;
+    border-color:white;
+    color:rgb(7, 58, 152);
+   padding: 0.5rem; 
+
+  }
+  .Card3b{
+    border-radius: 1rem;
+    border-color:white;
+    color:rgb(84, 84, 3);
+   padding: 0.5rem; 
+
+  }
+  .Cart1c{
+    color:rgb(130, 52, 73);
+    padding: 0.5rem;
+  
+  }
+  .Cart2c{
+    color:rgb(7, 58, 152);
+    padding: 0.5rem;
+  
+  }
+  .Cart3c{
+    color:rgb(84, 84, 3);
+    padding: 0.5rem;
+  
+  }
+  .Card1c p{
+    font-family: "Fira Sans", sans-serif;
+  }
+  .centered {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .centered img {
+    width: 120px;
+    border-radius: 50%;
+  }
+  .centered h2{
+    width: 20rem;
+    font-size: 1rem;
+    padding: 1rem 0;
+  }
+  .centered p{
+    width: 10rem;
+    font-size: 1.5rem;
+    color:rgb(6, 6, 122);
+   margin-left: 5rem;
+  }
+  .image-checkup img{
+    position: relative;
+    width: 500px;
+    height: 320px;
+    margin-top: 15rem;
+    margin-left: 0rem;
+  }
+  .header-right{
+   align-items: start;
+   align-content: start;
+    color:rgb(5, 76, 5)
+  }
+  .header-right h2{
+    margin-bottom: 10px;
+    align-items: start;
+  }
+  .daily-quiz{
+    padding: 2rem;
+    margin-top: -2rem;
+  }
+  .activities{
+    margin-top: -2rem;
+    padding: 2rem;
+  }
+  .navb{
+    display: flex;
+    flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding-left: 2rem;
+padding-right: 2rem;
+  }
+  .LogOut{
+    border-radius: 1rem;
+    width: 10%;
+    height: 50%;
+    border-color:rgb(84, 84, 3);;
+    color:rgb(162, 162, 10);
+   padding: 0.5rem; 
+  }
+  .activities-content{
+    display: flex;
+    justify-content: space-between ;
+  }
+  .dropdown select{
+    border: 3px solid rgb(152, 200, 9);
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+
+  }
+ .header-activities{
+  display: flex;
+padding-top: 2rem;
+  }
+  .progress{
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .header-activities h2{
+   align-items: start;
+  }
+  .bar{
+    margin-left: 1rem;
+  }
+  .daily-progress{
+    margin-top: 2rem;
+    width: 350px;
+    height: 350px;
+    position: relative;
+    background: rgba($color: #97b5e6, $alpha: 1.0);
+    border-radius: 10px;
+  }
+  .progress-head{
+    padding: 2rem;
+  }
+  .progress-head h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  .progress-head p{
+    font-size: .8rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .indicator{
+    margin-top: 0rem;
+  }
+  

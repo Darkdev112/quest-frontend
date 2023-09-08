@@ -22,12 +22,8 @@
     "react-player": "^2.12.0",
     "react-router": "^6.14.2",
     "react-router-dom": "^6.14.2",
-<<<<<<< HEAD
-    "react-scripts": "^5.0.1",
-=======
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
->>>>>>> f930874002aa8053669e6468cf18c50ceb4ae91a
     "sass": "^1.64.1",
     "svg": "^0.1.0",
     "ui": "^0.2.4",
@@ -56,5 +52,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
   }
 }
