@@ -12,17 +12,7 @@ function Quiz() {
 
   const questions = [
     {
-      text: "When did you start drinking  alcohol and how has your drinking pattern evolved over the years?",
-      options: [
-        { id: 0, text: "More than 2 years ago." },
-        {id: 1, text: "A year ago." },
-        { id: 2, text: "6 months ago."},
-        { id: 3, text: "6 months ago." },
-        { id: 4, text: "Few weeks ago."},
-      ],
-    },
-    {
-      text: "How often do you drink alcohol?",
+      text: "How often are you engaging in bingeing and purging behaviors?",
       options: [
         { id: 0, text: "Always"},
         { id: 1, text: "Often"},
@@ -32,37 +22,27 @@ function Quiz() {
       ],
     },
     {
-      text: "Have you experienced any blackouts or memory lapse due to alcohol?",
+      text: "What are some of the thoughts and feelings that lead to episodes of bingeing and purging?",
       options: [
-        { id: 0, text: "Always"},
-        { id: 1, text: "Often"},
-        { id: 2, text: "Sometimes"},
-        { id: 3, text: "Rarely" },
-        { id: 4, text: "Never"},
+        { id: 0, text: "Depression"},
+        { id: 1, text: "Anxiety"},
+        { id: 2, text: "Insecurity about body shape"},
+        { id: 3, text: "Low self-esteem" },
+        { id: 4, text: "Genetic and social ideas"},
       ],
     },
     {
-      text: "Are there any specific situations or emotions or triggers that lead you to drnik?",
+      text: "How is your experience with bulimia?:",
       options: [
-        { id: 0, text: "Depression and Anxiety"},
-        { id: 1, text: "Stress"},
-        { id: 2, text: "Peer pressure"},
-        { id: 3, text: "Interests" },
-        { id: 4, text: "None"},
+        { id: 0, text: "Very badly"},
+        { id: 1, text: "Badly"},
+        { id: 2, text: "Moderately"},
+        { id: 3, text: "Balanced" },
+        { id: 4, text: "None,I am cured"},
       ],
     },
     {
-      text: "Has alcohol affected your academic or work performances?",
-      options: [
-        { id: 0, text: "Always"},
-        { id: 1, text: "Often"},
-        { id: 2, text: "Sometimes"},
-        { id: 3, text: "Rarely" },
-        { id: 4, text: "Not anymore"},
-      ],
-    },
-    {
-      text: "Do you find it difficult to control the amount you drink once you start?",
+      text: "Do you feel in control during these episodes of bulimia, or does it feel more impulsive?:",
       options: [
         { id: 0, text: "Always"},
         { id: 1, text: "Often"},
@@ -72,7 +52,17 @@ function Quiz() {
       ],
     },
     {
-      text: "Have your relationships with family, friends, or colleagues been affected by your drinking?",
+      text: "Are you experiencing any physical symptoms as a result of your behaviors?:",
+      options: [
+        { id: 0, text: "Swollen cheeks ,fainting"},
+        { id: 1, text: "Dehydration"},
+        { id: 2, text: "Bloodshot eyes and Gastrointestinal issues"},
+        { id: 3, text: "Some symptoms but not regular" },
+        { id: 4, text: "None,I am cured"},
+      ],
+    },
+    {
+      text: "Has bulimia affected your daily life, relationships, and overall well-being?",
       options: [
         { id: 0, text: "Always"},
         { id: 1, text: "Often"},
@@ -82,27 +72,37 @@ function Quiz() {
       ],
     },
     {
-      text: "Have you ever tried to quit alcohol?",
+      text: "Have you ever tried to stop these behaviors on your own?",
       options: [
-        { id: 0, text: "Every year"},
-        { id: 1, text: "Every 6 months"},
-        { id: 2, text: "Few months ago"},
-        { id: 3, text: "This week" },
-        { id: 4, text: "Few days ago"},
+        { id: 0, text: "Never"},
+      { id: 1, text: "Rarely"},
+      { id: 2, text: "Sometimes"},
+      { id: 3, text: "Often" },
+      { id: 4, text: "Always"},
       ],
     },
     {
-      text: "Have you experienced withdrawal symptoms when you've tried to stop drinking in the past?",
+      text: "Do you have a support system in place, such as friends, family, or other loved ones?",
       options: [
-        { id: 0, text: "Always"},
-        { id: 1, text: "Often"},
+        { id: 0, text: "Never"},
+        { id: 1, text: "Rarely"},
         { id: 2, text: "Sometimes"},
-        { id: 3, text: "Rarely" },
-        { id: 4, text: "Never"},
+        { id: 3, text: "Often" },
+        { id: 4, text: "Always"},
+      ],
+    },
+    {
+      text: "How do you feel about the idea of working towards a healthier relationship with food and your body?",
+      options: [
+        { id: 0, text: "Do not appreciate"},
+        { id: 1, text: "Bad"},
+        { id: 2, text: "Moderate"},
+        { id: 3, text: "Good" },
+        { id: 4, text: "Very good"},
       ],
    },
    {
-    text: "Have you participated in any alcohol treatment programs or therapy sessions in the past?",
+    text: "10.Would you be open to exploring coping strategies that don't involve bingeing and purging?",
     options: [
       { id: 0, text: "Never"},
       { id: 1, text: "Rarely"},

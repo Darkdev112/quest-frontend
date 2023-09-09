@@ -12,47 +12,7 @@ function Quiz() {
 
   const questions = [
     {
-      text: "When did you start drinking  alcohol and how has your drinking pattern evolved over the years?",
-      options: [
-        { id: 0, text: "More than 2 years ago." },
-        {id: 1, text: "A year ago." },
-        { id: 2, text: "6 months ago."},
-        { id: 3, text: "6 months ago." },
-        { id: 4, text: "Few weeks ago."},
-      ],
-    },
-    {
-      text: "How often do you drink alcohol?",
-      options: [
-        { id: 0, text: "Always"},
-        { id: 1, text: "Often"},
-        { id: 2, text: "Sometimes"},
-        { id: 3, text: "Rarely" },
-        { id: 4, text: "Never"},
-      ],
-    },
-    {
-      text: "Have you experienced any blackouts or memory lapse due to alcohol?",
-      options: [
-        { id: 0, text: "Always"},
-        { id: 1, text: "Often"},
-        { id: 2, text: "Sometimes"},
-        { id: 3, text: "Rarely" },
-        { id: 4, text: "Never"},
-      ],
-    },
-    {
-      text: "Are there any specific situations or emotions or triggers that lead you to drnik?",
-      options: [
-        { id: 0, text: "Depression and Anxiety"},
-        { id: 1, text: "Stress"},
-        { id: 2, text: "Peer pressure"},
-        { id: 3, text: "Interests" },
-        { id: 4, text: "None"},
-      ],
-    },
-    {
-      text: "Has alcohol affected your academic or work performances?",
+      text: "Are you obsessed about fitness and have a less social activity circle?",
       options: [
         { id: 0, text: "Always"},
         { id: 1, text: "Often"},
@@ -62,7 +22,7 @@ function Quiz() {
       ],
     },
     {
-      text: "Do you find it difficult to control the amount you drink once you start?",
+      text: "Do you feel anxious and guilty when you miss a workout?",
       options: [
         { id: 0, text: "Always"},
         { id: 1, text: "Often"},
@@ -72,7 +32,7 @@ function Quiz() {
       ],
     },
     {
-      text: "Have your relationships with family, friends, or colleagues been affected by your drinking?",
+      text: "Do you find it challenging to take rest days?",
       options: [
         { id: 0, text: "Always"},
         { id: 1, text: "Often"},
@@ -82,27 +42,67 @@ function Quiz() {
       ],
     },
     {
-      text: "Have you ever tried to quit alcohol?",
-      options: [
-        { id: 0, text: "Every year"},
-        { id: 1, text: "Every 6 months"},
-        { id: 2, text: "Few months ago"},
-        { id: 3, text: "This week" },
-        { id: 4, text: "Few days ago"},
-      ],
-    },
-    {
-      text: "Have you experienced withdrawal symptoms when you've tried to stop drinking in the past?",
+      text: "Have you ever experienced any physical discomfort or injuries due to your intense workouts?",
       options: [
         { id: 0, text: "Always"},
         { id: 1, text: "Often"},
         { id: 2, text: "Sometimes"},
         { id: 3, text: "Rarely" },
-        { id: 4, text: "Never"},
+        { id: 4, text: "Not anymore"},
+      ],
+    },
+    {
+      text: "Is it easy to balance your fitness routine with other aspects of your life, such as work, social activities, and family?",
+      options: [
+        { id: 0, text: "Never"},
+        { id: 1, text: "Rarely"},
+        { id: 2, text: "Sometimes"},
+        { id: 3, text: "Often" },
+        { id: 4, text: "Always"},
+      ],
+    },
+    {
+      text: "Have you noticed any changes in your mood or emotions on days when you haven't exercised?",
+      options: [
+        { id: 0, text: "Very badly"},
+        { id: 1, text: "Badly"},
+        { id: 2, text: "Moderately"},
+        { id: 3, text: "Balanced" },
+        { id: 4, text: "None,I am cured"},
+      ],
+    },
+    {
+      text: "Do you ever take breaks from your fitness routine intentionally?",
+      options: [
+      { id: 0, text: "Never"},
+      { id: 1, text: "Rarely"},
+      { id: 2, text: "Sometimes"},
+      { id: 3, text: "Often" },
+      { id: 4, text: "Always"},
+      ],
+    },
+    {
+      text: "Do you experience withdrawal symptoms after long periods without exercise?",
+      options: [
+        { id: 0, text: "Always"},
+        { id: 1, text: "Often"},
+        { id: 2, text: "Sometimes"},
+        { id: 3, text: "Rarely" },
+        { id: 4, text: "Not anymore"},
+      ],
+    },
+    {
+      text: "How do you feel about the idea of having a more flexible approach to your fitness routine?",
+      options: [
+        { id: 0, text: "Negative"},
+        { id: 1, text: "Bad"},
+        { id: 2, text: "Neutral"},
+        { id: 3, text: "Good" },
+        { id: 4, text: "Positive"},
       ],
    },
    {
-    text: "Have you participated in any alcohol treatment programs or therapy sessions in the past?",
+    text: "Have you ever tried to give up Fitness addiction?",
     options: [
       { id: 0, text: "Never"},
       { id: 1, text: "Rarely"},

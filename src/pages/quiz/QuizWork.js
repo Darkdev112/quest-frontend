@@ -12,17 +12,57 @@ function Quiz() {
 
   const questions = [
     {
-      text: "When did you start drinking  alcohol and how has your drinking pattern evolved over the years?",
+      text: " How would you describe your typical work routine and hours?",
       options: [
-        { id: 0, text: "More than 2 years ago." },
-        {id: 1, text: "A year ago." },
-        { id: 2, text: "6 months ago."},
-        { id: 3, text: "6 months ago." },
-        { id: 4, text: "Few weeks ago."},
+        { id: 0, text: "More than 60 hours per week"},
+        { id: 1, text: "55-64 hours per week"},
+        { id: 2, text: "50 -55 hours per week"},
+        { id: 3, text: "40-50 hours a week" },
+        { id: 4, text: "Less than 40 hours a week"},
       ],
     },
     {
-      text: "How often do you drink alcohol?",
+      text: "Do you find your work rewarding or satisfying?",
+      options: [
+        { id: 0, text: "Always"},
+        { id: 1, text: "Often"},
+        { id: 2, text: "Sometimes"},
+        { id: 3, text: "Rarely" },
+        { id: 4, text: "Not anymore"},
+      ],
+    },
+    {
+      text: "How has your work addiction affected your personal life and relationships?",
+      options: [
+        { id: 0, text: "Very badly"},
+        { id: 1, text: "Badly"},
+        { id: 2, text: "Moderately"},
+        { id: 3, text: "Balanced" },
+        { id: 4, text: "None,I am cured"},
+      ],
+    },
+    {
+      text: "Have you experienced any negative physical or emotional effects due to excessive work?",
+      options: [
+        { id: 0, text: "Always"},
+        { id: 1, text: "Often"},
+        { id: 2, text: "Sometimes"},
+        { id: 3, text: "Rarely" },
+        { id: 4, text: "Not anymore"},
+      ],
+    },
+    {
+      text: "Can you recall times when work took precedence over self-care or leisure activities?",
+      options: [
+        { id: 0, text: "Always"},
+        { id: 1, text: "Often"},
+        { id: 2, text: "Sometimes"},
+        { id: 3, text: "Rarely" },
+        { id: 4, text: "Not anymore"},
+      ],
+    },
+    {
+      text: "Do you work to reduce guilt, helplessness,depression and anxiety?",
       options: [
         { id: 0, text: "Always"},
         { id: 1, text: "Often"},
@@ -32,7 +72,7 @@ function Quiz() {
       ],
     },
     {
-      text: "Have you experienced any blackouts or memory lapse due to alcohol?",
+      text: "7.Do you spend much more time working than you initially intended?",
       options: [
         { id: 0, text: "Always"},
         { id: 1, text: "Often"},
@@ -42,57 +82,17 @@ function Quiz() {
       ],
     },
     {
-      text: "Are there any specific situations or emotions or triggers that lead you to drnik?",
-      options: [
-        { id: 0, text: "Depression and Anxiety"},
-        { id: 1, text: "Stress"},
-        { id: 2, text: "Peer pressure"},
-        { id: 3, text: "Interests" },
-        { id: 4, text: "None"},
-      ],
-    },
-    {
-      text: "Has alcohol affected your academic or work performances?",
+      text: "Do you get more stressed when you are not able to work?",
       options: [
         { id: 0, text: "Always"},
         { id: 1, text: "Often"},
         { id: 2, text: "Sometimes"},
         { id: 3, text: "Rarely" },
-        { id: 4, text: "Not anymore"},
+        { id: 4, text: "Never"},
       ],
     },
     {
-      text: "Do you find it difficult to control the amount you drink once you start?",
-      options: [
-        { id: 0, text: "Always"},
-        { id: 1, text: "Often"},
-        { id: 2, text: "Sometimes"},
-        { id: 3, text: "Rarely" },
-        { id: 4, text: "Not anymore"},
-      ],
-    },
-    {
-      text: "Have your relationships with family, friends, or colleagues been affected by your drinking?",
-      options: [
-        { id: 0, text: "Always"},
-        { id: 1, text: "Often"},
-        { id: 2, text: "Sometimes"},
-        { id: 3, text: "Rarely" },
-        { id: 4, text: "Not anymore"},
-      ],
-    },
-    {
-      text: "Have you ever tried to quit alcohol?",
-      options: [
-        { id: 0, text: "Every year"},
-        { id: 1, text: "Every 6 months"},
-        { id: 2, text: "Few months ago"},
-        { id: 3, text: "This week" },
-        { id: 4, text: "Few days ago"},
-      ],
-    },
-    {
-      text: "Have you experienced withdrawal symptoms when you've tried to stop drinking in the past?",
+      text: "Does working too much have a negative impact on your health?",
       options: [
         { id: 0, text: "Always"},
         { id: 1, text: "Often"},
@@ -102,7 +102,7 @@ function Quiz() {
       ],
    },
    {
-    text: "Have you participated in any alcohol treatment programs or therapy sessions in the past?",
+    text: "Have you ever tried to set limits on work hours or take breaks during the day?",
     options: [
       { id: 0, text: "Never"},
       { id: 1, text: "Rarely"},

@@ -65,8 +65,8 @@ function Dashboard() {
     <div className='left-container'>
     <div class="centered">
     <img src={avatar} alt="Avatar woman"/>
-    <h2>Check your condition</h2>
-    <p> Check your every situation and your activities</p>
+    <h2>Ananya@gmail.com</h2>
+    <p className="Profiledomain"> ALcoholism</p>
     </div>
     <div className='image-checkup'>
     <img src={checkup} />
@@ -75,24 +75,61 @@ function Dashboard() {
   </div>
   
   <div class="split right">
-    {userDetails && <div className='logout'>
-          <button onClick={handleLogout}>Logout</button>
-    </div>}
+    <div className='navb'>
+     
   <div className='header-right'>
    <h2>Hi,Ananya</h2>
    <h6>Lets track your health daily</h6>
+   
+   <h2 className='header-activities'>Your Daily Quizes</h2>
    </div>
-   <div className='daily-quiz'>
-   <h2>Your Daily Quizzes</h2>
+   <button className='LogOut'>
+    {userDetails && <div>
+          <button  onClick={handleLogout}>Logout</button>
+    </div>}Log Out</button>
+   
    </div>
    <div className='track'>
    <Trackquiz/>
    </div>
+   <div className='cards'>
+   <div className="Card1">
+    <div className='Cart1c'>
+    <h4>Upcoming Quizes</h4>
+   <p>See the upcoming quizes here..</p>
+   <p>The next quiz will be on 28th Sep 23</p>
+    </div>
+  
+   <button class="Card1b">Attempt Quiz</button>
+
+   </div>
+   <div className="Card2">
+    <div className='Cart2c'>
+    <h4>Quizes Attempted</h4>
+   <p>See the attempted quizes here..</p>
+   <p>Your progress is what keeps you updated</p>
+    </div>
+  
+   <button class="Card2b">Attempted</button>
+
+   </div>
+   <div className="Card3">
+    <div className='Cart3c'>
+    <h4>Prevent</h4>
+   <p>Take the precautions while you can</p>
+   <p>Hop on to see the tips to prevent..</p>
+    </div>
+  
+   <button class="Card3b">Prevent</button>
+
+   </div>
+   </div>
+  
+
+ 
   <div className='activities'>
   <div className='activities-content'>
-  <div className='header-activities'>
-  <h2>Your progress activities</h2>
-  </div>
+  <h2 className='header-activities'>Your daily quizes</h2>
   <div className='dropdown'>
   <select class="form-select" id="week" name="week">
     <option value="">Once a day</option>
@@ -101,11 +138,16 @@ function Dashboard() {
     <option value="twice a month">Twice a month</option>
 </select>
   </div>
+
   </div>
-  <div className='progress'>
+  <div>
+   
+  </div>
+  {/* <div className='progress'>
   <div className='bar'>
 <Barr/>
-  </div>
+  </div> 
+
   <div className='daily-progress'>
   <div className='progress-head'>
  <h2>Daily Progress</h2>
@@ -115,7 +157,7 @@ function Dashboard() {
 <Daily_progress/>
 </div>
   </div>
-  </div>
+  </div> */}
   </div>
   </div>
   
