@@ -18,18 +18,17 @@
     text-align: center;
     justify-content: center;
     display: flex;
-    margin-top: 0rem;
+    margin-top: 1rem;
   }
 
   .btn-box {
-    position: absolute;
+    // position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: sans-serif;
     z-index: 1;
     gap: 1rem;
-    margin-left: 2rem;
   }
   button {
     border: none;

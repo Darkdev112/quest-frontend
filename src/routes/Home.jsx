@@ -8,6 +8,7 @@ import Signup from '../pages/sign up/SignUp';
 import Login from '../pages/login/Login';
 import Dashboard from '../pages/dashboard/Dashboard';
 import Precautions from '../pages/precautions/Precautions'
+import StSession from '../pages/Session/StSession';
 
 const Home = () => {
     const [userDetails, setUserDetails] = useState();
@@ -42,8 +43,9 @@ const Home = () => {
             <Route path='/login' element={<Login/>} />
             <Route path='/dashboard' element={<Dashboard userDetails = {userDetails} />} />
             <Route path='/domain' element={<Domain/>} />
-            <Route path='/quiz' element={<Quiz/>} />
+            <Route path='/quiz/:id' element={<Quiz/>} />
             <Route path='/precautions' element={<Precautions/>}></Route>
+            <Route path='/startsession/:id' element={<StSession/>}></Route>
         </Routes>
     )
 }

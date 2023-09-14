@@ -17,7 +17,7 @@ function Card({ data }) {
       })
       if(response.data?.project){
         console.log(response.data);
-        navigate('/dashboard')
+        navigate(`/startsession/${response.data.project._id}`)
         window.location.reload(true)
       }
     } catch (error) {
@@ -25,9 +25,6 @@ function Card({ data }) {
     }
   }
 
-  const handleClick2 = async () => {
-    navigate('/precautions')
-  }
   return (
     <div>
       <div className='card'>
@@ -38,13 +35,7 @@ function Card({ data }) {
           <h2>{data.title}</h2>
         </div>
         <div className="btn-box">
-          <button className='btn-1' onClick={handleClick}>Quiz
-            <span className="first"></span>
-            <span className="second"></span>
-            <span className="third"></span>
-            <span className="fourth"></span>
-          </button>
-          <button className='btn-2' onClick={handleClick2}>Precautions
+          <button className='btn-1' onClick={handleClick}>Choose
             <span className="first"></span>
             <span className="second"></span>
             <span className="third"></span>

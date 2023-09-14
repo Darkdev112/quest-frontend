@@ -1,7 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Tilt+Prism&display=swap');
 .Sessions{
-    background-image: url("https://images.unsplash.com/photo-1598046937895-2be846402c0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+    background-image: url("https://images.unsplash.com/photo-1544027993-37dbfe43562a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    color: black;
     padding: 20rem;
+    font-family: 'Source Code Pro', monospace;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+.Sessions h2{
+    margin-top: 1rem;
+    font-family: 'Source Code Pro', monospace;
+
+}
+.Sessions button{
+    background-color: rgb(147, 17, 254);
+    border-color:black;
+    border-width: 0.02rem;
+    border-radius: 0.5rem;
+    color:rgb(226, 194, 246);
+  
 }
