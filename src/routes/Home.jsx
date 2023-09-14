@@ -15,7 +15,7 @@ const Home = () => {
     const getUserDetails = async () => {
         const token = localStorage.getItem('token');
         if (token) {
-            const response = await axios.get('http://localhost:8000/getuser', {
+            const response = await axios.get('https://breakingfree.onrender.com/getuser', {
                 headers: {
                     'Content-Type': 'application/json',
                     'Authorization': `Bearer ${token}`

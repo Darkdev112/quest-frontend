@@ -17,7 +17,7 @@ function Dashboard({ userDetails }) {
     try {
       const token = localStorage.getItem('token');
       if (token) {
-        const response = await axios.get('http://localhost:8000/getprojects', {
+        const response = await axios.get('https://breakingfree.onrender.com/getprojects', {
           headers: {
             'Content-Type': 'application/json',
             'Authorization': `Bearer ${token}`
@@ -38,7 +38,7 @@ function Dashboard({ userDetails }) {
     const token = localStorage.getItem('token');
     try {
       if (token) {
-        const response = await axios.delete('http://localhost:8000/logout', {
+        const response = await axios.delete('https://breakingfree.onrender.com/logout', {
           headers: {
             'Content-Type': 'application/json',
             'Authorization': `Bearer ${token}`
@@ -68,7 +68,7 @@ function Dashboard({ userDetails }) {
             <h2>{userDetails?.email}</h2>
           </div>
           <div className='image-checkup'>
-            <img src={checkup} />
+            <img src={checkup} alt='checkup'/>
           </div>
         </div>
         <div className='flex flex-col items-center justify-center'>
@@ -76,7 +76,7 @@ function Dashboard({ userDetails }) {
           <div className='lg:w-3/4 sm:w-full m-2 h-[10rem] flex flex-col items-center'>
             {!projectsDetails?.length && <p>No projects to display</p>}
             {projectsDetails?.length && projectsDetails.map((project) => {
-              return <div className='bg-red-100 h-[2rem] my-2 w-fit px-2 text-lg rounded-lg hover:bg-red-500 cursor-pointer active:bg-red-500'>{project.addiction}</div>
+              return <div key={project._id} className='bg-red-100 h-[2rem] my-2 w-fit px-2 text-lg rounded-lg hover:bg-red-500 cursor-pointer active:bg-red-500'>{project.addiction}</div>
             })}
           </div>
         </div>

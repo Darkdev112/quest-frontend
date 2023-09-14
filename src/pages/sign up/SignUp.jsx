@@ -35,7 +35,7 @@ function Signup() {
     }
     console.log(details);
     try {
-      const response = await axios.post('http://localhost:8000/signup',details, {
+      const response = await axios.post('https://breakingfree.onrender.com/signup',details, {
         headers: {
           'Content-Type': 'application/json',
         }

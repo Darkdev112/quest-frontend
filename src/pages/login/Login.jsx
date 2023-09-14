@@ -28,14 +28,14 @@ function Login() {
     e.preventDefault();
     console.log(details);
     try {
-      const response = await axios.post('http://localhost:8000/login',details, {
+      const response = await axios.post('https://breakingfree.onrender.com/login',details, {
         headers: {
           'Content-Type': 'application/json',
         }
       })
       if(response.data?.token){
         localStorage.setItem('token', response.data.token)
-        if(response.data.projects.length != 0){
+        if(response.data.projects.length !== 0){
           navigate('/dashboard')
           window.location.reload()
         }

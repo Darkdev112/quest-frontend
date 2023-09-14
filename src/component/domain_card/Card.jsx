@@ -9,7 +9,7 @@ function Card({ data }) {
   const handleClick = async () => {
     const token = localStorage.getItem('token')
     try {
-      const response = await axios.post('http://localhost:8000/makeproject',{addiction : data.tag}, {
+      const response = await axios.post('https://breakingfree.onrender.com/makeproject',{addiction : data.tag}, {
         headers: {
           'Content-Type': 'application/json',
           'Authorization' : `Bearer ${token}`
