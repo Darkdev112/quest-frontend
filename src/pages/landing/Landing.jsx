@@ -19,14 +19,14 @@ function Landing({userDetails}) {
   }
   return (
     <div>
-        <nav class="navbar">
-            <div class="navbar-container container">
+        <nav className="navbar">
+            <div className="navbar-container container">
                 <div className='side-btn'>
             {userDetails && <Link to={'/dashboard'}><button>Dashboard</button></Link>}
             {!userDetails && <Link to={'/signup'}><button onClick={handleClick1}>Signup</button></Link>}
             {!userDetails && <Link to={'/login'}><button onClick={handleClick2}>Login</button></Link>}
         </div>
-                <h1 class="logo">Breaking Free</h1>
+                <h1 className="logo">Breaking Free</h1>
                 </div>
         </nav>
         <VideoCarousel/>

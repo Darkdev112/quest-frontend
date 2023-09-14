@@ -158,15 +158,15 @@ function Quiz() {
         //   <h2 className="Head4">See your performance analysis</h2>
         //   <button onClick={() => restartGame()}>Analysis</button>
         // </div>
-        <div class="circle-wrap">
-        <div class="circle">
-          <div class="mask full">
-            <div class="fill"></div>
+        <div className="circle-wrap">
+        <div className="circle">
+          <div className="mask full">
+            <div className="fill"></div>
           </div>
-          <div class="mask half">
-            <div class="fill"></div>
+          <div className="mask half">
+            <div className="fill"></div>
           </div>
-          <div class="inside-circle"> 75% </div>
+          <div className="inside-circle"> 75% </div>
         </div>
       </div>
       ) : (

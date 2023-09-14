@@ -35,8 +35,9 @@ function Login() {
       })
       if(response.data?.token){
         localStorage.setItem('token', response.data.token)
-        if(response.data.user.domain){
+        if(response.data.projects.length != 0){
           navigate('/dashboard')
+          window.location.reload()
         }
         else{
           navigate('/domain')

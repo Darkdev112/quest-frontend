@@ -5,26 +5,28 @@ import { useNavigate } from 'react-router';
 
 function Card({ data }) {
   const navigate = useNavigate();
+  
   const handleClick = async () => {
     const token = localStorage.getItem('token')
     try {
-      const response = await axios.patch('http://localhost:8000/setdomain',{domain : data.tag}, {
+      const response = await axios.post('http://localhost:8000/makeproject',{addiction : data.tag}, {
         headers: {
           'Content-Type': 'application/json',
           'Authorization' : `Bearer ${token}`
         }
       })
-      if(response.data?.user){
-        console.log(response.data.user);
-        navigate('/quiz')
+      if(response.data?.project){
+        console.log(response.data);
+        navigate('/dashboard')
+        window.location.reload(true)
       }
-      // else if(response.data?.user){
-      //   console.log(response.data.user);
-      //   navigate('/precaution')
-      // }
     } catch (error) {
       console.log(error);
     }
+  }
+
+  const handleClick2 = async () => {
+    navigate('/precautions')
   }
   return (
     <div>
@@ -35,18 +37,18 @@ function Card({ data }) {
         <div className='card-title'>
           <h2>{data.title}</h2>
         </div>
-        <div class="btn-box">
+        <div className="btn-box">
           <button className='btn-1' onClick={handleClick}>Quiz
-            <span class="first"></span>
-            <span class="second"></span>
-            <span class="third"></span>
-            <span class="fourth"></span>
+            <span className="first"></span>
+            <span className="second"></span>
+            <span className="third"></span>
+            <span className="fourth"></span>
           </button>
-          <button className='btn-2'>Precautions
-            <span class="first"></span>
-            <span class="second"></span>
-            <span class="third"></span>
-            <span class="fourth"></span>
+          <button className='btn-2' onClick={handleClick2}>Precautions
+            <span className="first"></span>
+            <span className="second"></span>
+            <span className="third"></span>
+            <span className="fourth"></span>
           </button>
         </div>
       </div>

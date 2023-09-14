@@ -182,59 +182,59 @@ function Quiz() {
         //   <button onClick={() => restartGame()}>Analysis</button>
         // </div>
         <>
-          {randomNum===1 &&<div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full">
-                <div class="fill"></div>
+          {randomNum===1 &&<div className="circle-wrap">
+            <div className="circle">
+              <div className="mask full">
+                <div className="fill"></div>
               </div>
-              <div class="mask half">
-                <div class="fill"></div>
+              <div className="mask half">
+                <div className="fill"></div>
               </div>
-              <div class="inside-circle"> 70% </div>
+              <div className="inside-circle"> 70% </div>
             </div>
           </div>}
-          {randomNum===2 &&<div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full">
-                <div class="fill"></div>
+          {randomNum===2 &&<div className="circle-wrap">
+            <div className="circle">
+              <div className="mask full">
+                <div className="fill"></div>
               </div>
-              <div class="mask half">
-                <div class="fill"></div>
+              <div className="mask half">
+                <div className="fill"></div>
               </div>
-              <div class="inside-circle"> 75% </div>
+              <div className="inside-circle"> 75% </div>
             </div>
           </div>}
-          {randomNum===3 &&<div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full">
-                <div class="fill"></div>
+          {randomNum===3 &&<div className="circle-wrap">
+            <div className="circle">
+              <div className="mask full">
+                <div className="fill"></div>
               </div>
-              <div class="mask half">
-                <div class="fill"></div>
+              <div className="mask half">
+                <div className="fill"></div>
               </div>
-              <div class="inside-circle"> 85% </div>
+              <div className="inside-circle"> 85% </div>
             </div>
           </div>}
-          {randomNum===4 &&<div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full">
-                <div class="fill"></div>
+          {randomNum===4 &&<div className="circle-wrap">
+            <div className="circle">
+              <div className="mask full">
+                <div className="fill"></div>
               </div>
-              <div class="mask half">
-                <div class="fill"></div>
+              <div className="mask half">
+                <div className="fill"></div>
               </div>
-              <div class="inside-circle"> 81% </div>
+              <div className="inside-circle"> 81% </div>
             </div>
           </div>}
-          {randomNum===5 &&<div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full">
-                <div class="fill"></div>
+          {randomNum===5 &&<div className="circle-wrap">
+            <div className="circle">
+              <div className="mask full">
+                <div className="fill"></div>
               </div>
-              <div class="mask half">
-                <div class="fill"></div>
+              <div className="mask half">
+                <div className="fill"></div>
               </div>
-              <div class="inside-circle"> 79% </div>
+              <div className="inside-circle"> 79% </div>
             </div>
           </div>}
           <div>
