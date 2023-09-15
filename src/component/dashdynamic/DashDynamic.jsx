@@ -15,7 +15,7 @@ export default function DashDynamic({ tag, projects }) {
         try {
             const token = localStorage.getItem('token');
             if (token) {
-                const response = await axios.get(`https://breakingfree.onrender.com/getsessions/${findProject._id}`, {
+                const response = await axios.get(`https://breakingfree.onrender.com/getsessions/${findProject?._id}`, {
                     headers: {
                         'Content-Type': 'application/json',
                         'Authorization': `Bearer ${token}`

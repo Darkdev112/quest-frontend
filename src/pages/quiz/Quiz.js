@@ -4,6 +4,8 @@ import "./Quiz.css";
 import { useSearchParams } from "react-router-dom";
 import { useNavigate, useParams } from "react-router";
 import { useEffect } from "react";
+import Submit from "../../component/Submit/Submit";
+
 
 function Quiz() {
   const [showResults, setShowResults] = useState(false);
@@ -16,7 +18,6 @@ function Quiz() {
   const [searchParams] = useSearchParams()
   const navigate = useNavigate();
   for (const entry of searchParams.entries()) {
-    console.log(entry);
     query.push(entry)
   }
 
@@ -50,10 +51,10 @@ function Quiz() {
 
   const optionClicked = (index) => {
     setSubmit((prev) => {
-      return prev.push({
+      return [...prev,{
         qid: questions[currentQuestion]?._id,
         option_chosen: index
-      })
+      }]
     })
     if (currentQuestion + 1 < questions.length) {
       setCurrentQuestion(currentQuestion + 1);
@@ -61,6 +62,31 @@ function Quiz() {
       setShowResults(true);
     }
   };
+
+  const showSubmit = async () => {
+    // try {
+    //   const answers = [...submit]
+    //   const token = localStorage.getItem('token');
+    //   console.log(`https://breakingfree.onrender.com/updatesession/${id}?session=${query[0][1]}`);
+    //   if (token) {
+    //     const response = await axios.patch(`https://breakingfree.onrender.com/updatesession/${id}?session=${query[0][1]}`,{answers}, {
+    //       headers: {
+    //         'Content-Type': 'application/json',
+    //         'Authorization': `Bearer ${token}`
+    //       }
+    //     })
+    //     if (response.data?.project) {
+    //       console.log(response.data.project);
+    //       navigate('/')
+    //     } else {
+    //       console.log("update sessions failed");
+    //     }
+    //   }
+    // } catch (error) {
+    //   console.log(error);
+    // }
+    navigate('/')
+  }
 
   return (
     <>
@@ -70,17 +96,19 @@ function Quiz() {
 
 
           {showResults ? (
-            <div className="circle-wrap">
-              <div className="circle">
-                <div className="mask full">
-                  <div className="fill"></div>
-                </div>
-                <div className="mask half">
-                  <div className="fill"></div>
-                </div>
-                <div className="inside-circle"> 75% </div>
-              </div>
-            </div>
+            <Submit showSubmit={showSubmit}/>
+            // <div className="circle-wrap">
+            //   <div className="circle">
+            //     <div className="mask full">
+            //       <div className="fill"></div>
+            //     </div>
+            //     <div className="mask half">
+            //       <div className="fill"></div>
+            //     </div>
+            //     <div className="inside-circle"> 75% </div>
+            //   </div>
+            //   <button onClick={showSubmit}>Click here</button>
+            // </div>
           ) : (
             <div className="question-card">
               <div className="Ques-Ans">
@@ -92,10 +120,7 @@ function Quiz() {
               <ul className="Ques">
                 {questions[currentQuestion]?.options.map((option, index) => {
                   return (
-                    <li className={`Option option-${index}`}
-                      key={index}
-                      onClick={() => optionClicked(index)}
-                    >
+                    <li className={`Option option-${index}`} key={index} onClick={() => optionClicked(index)}>
                       {option}
                     </li>
                   );

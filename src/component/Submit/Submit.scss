@@ -1,0 +1,75 @@
+$heading-typeface: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$body-typeface: Georgia, Times, "Times New Roman", serif;
+$color: #333;
+
+@mixin box-sizing {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	font-size: 20px;
+}
+
+html {
+	@include box-sizing;
+}
+
+*,
+*:before,
+*:after {
+	@include box-sizing;
+}
+
+
+.submit-quiz {
+    background-image: url(https://img.freepik.com/free-vector/employees-celebrating-business-success-with-huge-trophy_1150-37475.jpg?w=1060&t=st=1694726746~exp=1694727346~hmac=d2634cc5a88eb1879f22f365b59e7c0b0743c06f074f0b025abfd802bd90b18b);
+	background-position: calc(170%);
+    position: relative;
+	top: 5%;
+	width: 100%;
+	height: 100vh;
+	min-width: 320px;
+	min-height: 320px;
+	padding: 1rem;
+}
+
+.position {
+	position: absolute;
+	top: 50%;
+	left: 30%;
+	transform: translate(-50%, -50%);
+	width: 40vw;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.square {
+	// This is the magic bit
+	height: 0;
+	padding-bottom: 60%;
+    display: flex;
+    flex-direction: column;
+	position: relative;
+ 	background: rgb(245, 227, 221);
+	text-align: center;
+	overflow: hidden;
+    display: flex;
+    flex-direction: column;
+	box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.33333);
+}
+
+.square-inn {
+	position: relative;
+	align-items: center;
+    justify-content: center;
+	width: 100%;
+	padding: 2rem;
+top: 2rem;
+}
+ .square-header h1{
+    font-size:35px;
+}
+.square-header h2{
+    font-size:25px;
+}
